@@ -1,0 +1,73 @@
+/* Set the height of the Jumbotron to 60% of the viewport height */
+.jumbotron {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  /* Add a semi-transparent overlay to the Jumbotron */
+  .jumbotron:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  /* Style the Jumbotron heading */
+  .jumbotron h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Style the Jumbotron subheading */
+  .jumbotron p {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Style the Jumbotron button */
+  .jumbotron .btn-primary {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Style the Navbar */
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the Navbar links */
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: #212529;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /* Style the Navbar links when they are hovered over */
+  .navbar-nav .nav-link:hover {
+    color: #dc3545;
+  }
